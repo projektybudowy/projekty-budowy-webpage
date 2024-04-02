@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "GothamBook";
+    src: url(./gotham/GothamBold.ttf) format("truetype");
+}
+
+body {
+    background: #e8e4dd;
+    font-family: 'GothamBook';
+    color: #0b1c24;
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row ;
+    border-bottom: 1px solid black;
+    padding: 0 12px;
+    height: 90px;
+}
+
+.navigation-left {
+    width: 20%;
+    padding: 20px;
+    text-align: left;
+}
+
+.navigation-center {
+    background: #f9ffff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 12px 24px 12px 24px
+}
+
+.navigation-right {
+    width: 20%;
+    padding: 20px;
+    text-align: right;
+}
+
+.menu {
+    margin-bottom: 8px;
+}
+
+.menu-item {
+    margin: 0 20px;
+}
+
+.background-image {
+    width: 1156px;
+    margin-left: 22px;
+}
+
+.body {
+    position: relative;
+}
+
+.intro {
+    position: absolute;
+    z-index: 10;
+    font-size: 24px;
+    color: #092635;
+    top: 28px;
+    left: 230px;
+    line-height: 14px;
+}
+.description {
+    font-size: 14px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 300px;
+}
+
+.call-to-action-button {
+    background-color: #082334;
+    color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.bottom-menu {
+    background: #f8ffff;
+    display: flex;
+    flex-direction: row;
+    width: 1145px;
+    margin-left: 31px;
+    justify-content: space-around;
+    padding-bottom: 24px;
+}
+
+.bottom-menu-item {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+}
+
+.bottom-menu-item img {
+    height: 75px;
+    margin-bottom: 24px;
+}
