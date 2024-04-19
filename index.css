@@ -30,6 +30,12 @@ body {
     }
 }
 
+.desktop {
+    @media (max-width: 890px) {
+        display: none;
+    }
+}
+
 .mobile {
     display: none;
     align-self: center;
@@ -65,7 +71,8 @@ body {
     justify-content: space-between;
     flex-direction: row;
     align-items: flex-end;
-    padding: 12px 24px 12px 24px
+    padding: 12px 24px 12px 24px;
+    gap: 20px;
 }
 
 .navigation-right {
@@ -81,7 +88,7 @@ body {
 .menu {
     margin-bottom: 8px;
 
-    @media (max-width: 890px) {
+    @media (max-width: 500px) {
         display: none;
     }
 }
@@ -93,11 +100,22 @@ body {
 .background-image {
     max-width: 1156px;
     width: 100%;
+
+    @media (max-width: 890px) {
+        position: absolute;
+        top: 0;
+    }
 }
 
 .body {
     position: relative;
-    padding: 0 22px;
+    margin: 0 22px;
+
+    @media (max-width: 890px) {
+        background-image: url('./projekty-budowy-4.png');
+        background-size: cover;
+        background-position-y: bottom;
+    }
 }
 
 .intro {
@@ -116,11 +134,10 @@ body {
         position: relative;
         top: 0;
         left: 0;
-        background: #f9ffff;
+        background: rgba(255, 255, 255, 0.9);
         border-radius: 0;
         width: calc(100% - 40px);
-        padding: 0 20px 20px 20px;
-        display: none;
+        padding: 0 20px 20px 20px;  
     }
 }
 .title {
@@ -171,6 +188,10 @@ body {
     width: 100%;
     justify-content: space-around;
     padding-bottom: 24px;
+
+    @media (max-width: 890px) {
+        background: rgba(255, 255, 255, 0.9);
+    }
 
     @media (max-width: 500px) {
         display: none;
