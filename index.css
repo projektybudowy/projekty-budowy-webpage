@@ -7,11 +7,36 @@ body {
     background: #e8e4dd;
     font-family: 'GothamBook';
     color: #0b1c24;
+    width: 100%;
+
+    @media only screen and (max-width: 500px) {
+        margin: 0;
+    }
 }
 
 .container {
     margin: auto;
     max-width: 1200px;
+}
+
+.header {
+    @media only screen and (max-width: 890px) {
+        padding: 0 22px;
+    }
+
+    @media only screen and (max-width: 500px) {
+        padding: 0;
+        padding-top: 8px;
+    }
+}
+
+.mobile {
+    display: none;
+    align-self: center;
+
+    @media only screen and (max-width: 890px) {
+        display: block;
+    }
 }
 
 .navigation {
@@ -20,7 +45,6 @@ body {
     align-items: flex-end;
     flex-direction: row ;
     border-bottom: 1px solid black;
-    padding: 0 12px;
     height: 90px;
 }
 
@@ -28,6 +52,10 @@ body {
     width: 20%;
     padding: 20px;
     text-align: left;
+
+    @media only screen and (max-width: 890px) {
+        display: none;
+    }
 }
 
 .navigation-center {
@@ -44,10 +72,18 @@ body {
     width: 20%;
     padding: 20px;
     text-align: right;
+
+    @media only screen and (max-width: 890px) {
+        display: none;
+    }
 }
 
 .menu {
     margin-bottom: 8px;
+
+    @media only screen and (max-width: 890px) {
+        display: none;
+    }
 }
 
 .menu-item {
@@ -55,27 +91,66 @@ body {
 }
 
 .background-image {
-    width: 1156px;
-    margin-left: 22px;
+    max-width: 1156px;
+    width: 100%;
 }
 
 .body {
     position: relative;
+    padding: 0 22px;
 }
 
 .intro {
     position: absolute;
     z-index: 10;
-    font-size: 24px;
+    font-size: 20px;
     color: #092635;
-    top: 28px;
-    left: 230px;
+    top: 5%;
+    left: 20%;
     line-height: 14px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    padding: 0 10px 20px 10px;
+
+    @media only screen and (max-width: 890px) {
+        position: relative;
+        top: 0;
+        left: 0;
+        background: #f9ffff;
+        border-radius: 0;
+        width: calc(100% - 40px);
+        padding: 0 20px 20px 20px;
+        display: none;
+    }
+}
+.title {
+    @media only screen and (max-width: 890px) {
+        font-size: 12px;
+        padding-top: 15px;
+    }
+}
+
+.mobile-header {
+    font-size: 14px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    background-color: #f9ffff;
+    padding: 20px;
+
+    @media only screen and (max-width: 890px) {
+        max-width: none;
+    }
 }
 .description {
     font-size: 14px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+
+    @media only screen and (max-width: 890px) {
+        max-width: none;
+    }
 }
 
 .call-to-action-button {
@@ -92,10 +167,14 @@ body {
     background: #f8ffff;
     display: flex;
     flex-direction: row;
-    width: 1145px;
-    margin-left: 31px;
+    max-width: 1145px;
+    width: 100%;
     justify-content: space-around;
     padding-bottom: 24px;
+
+    @media only screen and (max-width: 500px) {
+        display: none;
+    }
 }
 
 .bottom-menu-item {
