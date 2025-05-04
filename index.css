@@ -161,7 +161,7 @@ a {
     margin: 0 22px;
 
     @media (max-width: 890px) {
-        background-image: url('./projekty-budowy-4.png');
+        background-image: url('./projekty-budowy-4.webp');
         background-size: cover;
         background-position-y: bottom;
     }
